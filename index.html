@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eesha Iyer — Portfolio</title>
+  <meta name="description" content="Portfolio of Eesha Iyer, Applied Economist · Data Scientist · Research Analyst · AI + Market Research based in Washington, DC." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --soft: #64748b;
+      --bg1: #ffffff;
+      --grad1: #eef2ff; /* indigo-50 */
+      --grad2: #fff1f2; /* rose-50 */
+      --brand: #4f46e5; /* indigo-600 */
+      --brand2: #db2777; /* fuchsia/rose */
+      --ring: rgba(255,255,255,0.7);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink);}
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    .bg { background: linear-gradient(135deg, var(--bg1), var(--grad1) 45%, var(--grad2)); min-height: 100vh; }
+    header.nav { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); border-bottom: 1px solid #e5e7eb; z-index: 20; }
+    header .inner { display:flex; align-items:center; justify-content: space-between; padding: 12px 0; }
+    nav a { font-size: 14px; margin-left: 14px; }
+    .hero { padding: 48px 0 24px; }
+    .grid { display:grid; grid-template-columns: 1fr; gap: 24px; }
+    @media (min-width: 1024px) {
+      .grid-hero { grid-template-columns: 2fr 1fr; align-items: center; }
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+      .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    }
+    h1 { font-size: 40px; line-height: 1.1; margin: 0; }
+    h2 { font-size: 22px; margin: 0 0 12px; }
+    p.lead { color: var(--soft); max-width: 60ch; }
+    .chip { display:inline-flex; align-items:center; padding: 6px 10px; border-radius: 999px; background: #eef2ff; color: #3730a3; border: 1px solid #e0e7ff; font-size: 12px; margin-right: 8px; margin-top: 8px; }
+    .cta { display:inline-flex; align-items:center; padding: 10px 14px; border-radius: 999px; background-image: linear-gradient(90deg, var(--brand), #a21caf, var(--brand2)); color: white; border: none; font-weight: 600; cursor: pointer; }
+    .cta.secondary { background: white; color: var(--ink); border: 1px solid #e5e7eb; }
+    .flex { display:flex; gap: 10px; flex-wrap: wrap; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .card { border: 1px solid #e5e7eb; background: white; border-radius: var(--radius); padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+    .card h3 { margin: 0 0 4px; font-size: 16px; }
+    .card .meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+    ul.bullets { margin: 8px 0 0 18px; }
+    ul.bullets li { margin: 6px 0; }
+    .tag { font-size: 10px; padding: 4px 8px; border: 1px solid #e5e7eb; border-radius: 999px; }
+    .tool { font-size: 10px; padding: 4px 8px; border-radius: 999px; background:#eef2ff; color:#3730a3; border:1px solid #e0e7ff; }
+    .filter button { font-size: 12px; padding: 6px 10px; border-radius: 999px; border:1px solid #e5e7eb; background:white; cursor:pointer; }
+    .filter button.active { background: var(--brand); color: white; border-color: var(--brand); }
+    .hero-photo { position: relative; width: 260px; height: 260px; border-radius: 24px; overflow:hidden; box-shadow: 0 8px 24px rgba(79,70,229,0.15); }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; display:block; }
+    .hero-glow { position:absolute; inset:-8px; border-radius: 28px; background: radial-gradient(600px 100px at 20% 0%, rgba(79,70,229,0.08), transparent), radial-gradient(600px 100px at 80% 100%, rgba(219,39,119,0.08), transparent); z-index:-1; filter: blur(8px); }
+    footer { border-top: 1px solid #e5e7eb; padding: 24px 0; text-align:center; color: #94a3b8; font-size: 12px; margin-top: 40px; }
+    .section { padding: 16px 0 28px; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Person", "name": "Eesha Iyer", "jobTitle": "Applied Economist \u00b7 Data Scientist \u00b7 Research Analyst \u00b7 AI + Market Research", "email": "eiyer.contact@gmail.com", "url": "https://www.linkedin.com/in/eesha-iyer/", "sameAs": ["https://github.com/eesha2712", "https://www.linkedin.com/in/eesha-iyer/"], "address": {"@type": "PostalAddress", "addressLocality": "Washington, DC"}}
+  </script>
+</head>
+<body class="bg">
+  <header class="nav">
+    <div class="wrap inner">
+      <strong>Eesha Iyer</strong>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class='cta secondary' href='assets/Eesha_Iyer_Resume.pdf' download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero grid grid-hero" id="top">
+      <div>
+        <h1>Eesha Iyer</h1>
+        <p class="muted" style="margin-top:6px;">Applied Economist · Data Scientist · Research Analyst · AI + Market Research</p>
+        <p class="lead" style="margin-top:10px;">I turn messy, high‑stakes data into decision‑ready insights. My work spans causal inference, machine learning, and product‑grade automation for policy and market research teams.</p>
+        <div class="flex" style="margin-top:16px;">
+          <a class="cta" href="mailto:eiyer.contact@gmail.com">Email me</a>
+          <a class="cta secondary" href="https://www.linkedin.com/in/eesha-iyer/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="cta secondary" href="https://github.com/eesha2712" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <div class="flex muted" style="margin-top:12px;">
+          <span>📍 Washington, DC</span>
+          <span>•</span>
+          <span>📞 (640) 466-8138</span>
+          <span>•</span>
+          <span>✉️ eiyer.contact@gmail.com</span>
+        </div>
+        <div style="margin-top:12px;">
+          <span class="chip">1.5M student records analyzed</span><span class="chip">+150% outreach yield</span><span class="chip">40% faster reports</span>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <div class="hero-photo">
+          <img src="assets/headshot.jpg" alt="Eesha Iyer headshot" />
+          <div class="hero-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+        <h2>Selected Work</h2>
+        <div class="filter flex" id="filter"></div>
+      </div>
+      <div class="grid grid-2" id="projects"></div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills & Tooling</h2>
+      <div class="grid grid-4">
+        <div class="card"><h3>Economic Analysis</h3><ul class="bullets"><li>Causal inference</li><li>DiD</li><li>Fixed effects</li><li>Value‑added modeling</li><li>Program evaluation</li></ul></div><div class="card"><h3>Data Science & AI</h3><ul class="bullets"><li>Predictive modeling</li><li>XAI</li><li>Feature engineering</li><li>Model validation</li><li>Automation</li></ul></div><div class="card"><h3>Tooling</h3><ul class="bullets"><li>Python</li><li>STATA</li><li>R</li><li>SQL</li><li>Power BI</li><li>Excel</li><li>GitHub</li><li>Airtable</li><li>SurveyCTO</li><li>Label Studio</li></ul></div><div class="card"><h3>Communication</h3><ul class="bullets"><li>Stakeholder briefings</li><li>Memos</li><li>Dashboards</li><li>Training materials</li><li>Data storytelling</li></ul></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="grid grid-2">
+        <div class="card"><h3>Research Analyst</h3><div class="meta">UMD – Center for Educational Data Science & Innovation • Jan 2025 – Present</div><ul class="bullets"<li>Lead VAM and causal analysis on 1.5M student records across 300 schools</li><li>Built outreach targeting (yield +150%) and automated weekly workflows</li><li>Delivered district dashboards and decision‑ready memos</li></ul></div><div class="card"><h3>Research Intern</h3><div class="meta">World Bank – Global Indicators Group • Sep 2024 – Dec 2024</div><ul class="bullets"<li>Converted DOCX surveys to multi‑language HTML for cross‑team reuse</li><li>Built QA auto‑flagging (≈78%+ accuracy) and standardized reporting</li><li>Prepared stakeholder decks across 6 CEE countries</li></ul></div><div class="card"><h3>Research Assistant</h3><div class="meta">UMD – College of Education • Feb 2024 – Sep 2024</div><ul class="bullets"<li>Merged/cleaned 250k multi‑year records; longitudinal analysis</li><li>Applied FE & DiD to evaluate STEM program impacts</li><li>Drafted reports highlighting participation changes</li></ul></div><div class="card"><h3>Data & Analytics Intern</h3><div class="meta">TVS Credit Services • May 2023 – Jul 2023</div><ul class="bullets"<li>Built Power BI data quality dashboards and feature pipelines</li><li>Improved model performance with quality controls and engineered features</li><li>Developed OCR prototype (≈82% accuracy)</li></ul></div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>University of Maryland</h3><div class="meta">M.S., Applied Economics</div><p class="muted">Policy analysis, financial economics, program evaluation</p></div><div class="card"><h3>IIT Madras</h3><div class="meta">Postgraduate Diploma, Data Science</div><p class="muted">Machine learning, statistics, programming</p></div><div class="card"><h3>University of Madras</h3><div class="meta">B.A., Economics</div><p class="muted">Micro, macro, econometrics</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="card">
+        <h2>Let’s connect</h2>
+        <p class="muted">I’m exploring roles in economic consulting, data science/analytics, and strategy where rigorous analysis meets clear business impact.</p>
+        <div class="flex" style="margin-top:10px;">
+          <a class="cta" href="mailto:eiyer.contact@gmail.com?subject=Role%20for%20Eesha%20Iyer">Hire me</a>
+          <a class="cta secondary" href="https://www.linkedin.com/in/eesha-iyer/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="cta secondary" href="https://github.com/eesha2712" target="_blank" rel="noreferrer">GitHub</a>
+          <a class='cta secondary' href='assets/Eesha_Iyer_Resume.pdf' download>Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Eesha Iyer. Built as a lightweight static site.</footer>
+
+  <script>
+    const projects = [{"id": "k12-causality", "title": "K\u201112 Discipline & Attendance Causality", "org": "UMD \u2013 Center for Educational Data Science & Innovation", "timeframe": "Jan 2025 \u2013 Present", "blurb": "Estimate the causal effects of disciplinary actions on attendance across 1.5M student records and 300 schools; built outreach targeting and automated ops.", "bullets": ["Value\u2011added modeling, fixed effects, and cohort tracking on longitudinal data", "Outreach yield +150% via targeting; automated weekly workflows (\u22486 hours saved/week)", "Delivered executive memos and dashboards for district leadership"], "tools": ["STATA", "Airtable", "Python", "Label Studio"], "tags": ["Economics", "Policy", "Data Science"], "links": []}, {"id": "wb-survey-automation", "title": "Survey Automation & QA Intelligence", "org": "World Bank \u2013 Global Indicators Group", "timeframe": "Sep 2024 \u2013 Dec 2024", "blurb": "Converted DOCX surveys to reusable HTML and built QA intelligence to auto\u2011flag issues across multi\u2011language deployments.", "bullets": ["Response rates up 83%; QA time down 60% (multi\u2011team rollout)", "Delivered 6 stakeholder decks across CEE with decision visuals", "Python pipeline with OpenPyXL + validation and reporting modules"], "tools": ["Python", "Pandas", "OpenPyXL", "Matplotlib"], "tags": ["AI + MR", "Data Science", "Ops"], "links": []}, {"id": "trendagent", "title": "TrendAgent \u2014 AI Insights Agent (In Progress)", "org": "Independent (Market Research Client)", "timeframe": "Apr 2025 \u2013 Present", "blurb": "Building a scalable agent with explainable modules, live KPI dashboards, and scenario simulation; currently validating with a client pilot.", "bullets": ["In active development; early pilot indicates 25\u201340% faster report preparation", "Explainable outputs with traceable data lineage (prototype)", "Interactive KPI dashboards scoped; first release planned"], "tools": ["Python", "SQL", "Power BI"], "tags": ["AI + MR", "Data Science", "Product"], "links": [{"label": "TrendAgent PoC Deck", "href": "assets/TrendAgent_PoC_Deck.pdf"}]}, {"id": "greenspace-did", "title": "Green Spaces & Gentrification (ICEE 2025)", "org": "Co\u2011authored study; presented at ICEE 2025", "timeframe": "2019 \u2013 2025", "blurb": "ZIP\u2011level migration and displacement patterns after community gardens in Chicago & Los Angeles using quasi\u2011experimental methods.", "bullets": ["Difference\u2011in\u2011differences with robustness/sensitivity checks", "Reproducible pipeline using census migration APIs", "Presented findings to an academic audience (ICEE 2025)"], "tools": ["STATA", "Python"], "tags": ["Economics", "Policy", "Research"], "links": [{"label": "Conference Deck", "href": "assets/ICEE_2025_Greenspace_Presentation.pptx"}]}];
+    const container = document.getElementById('projects');
+    const filterEl = document.getElementById('filter');
+    const allTags = Array.from(new Set(['All', ...projects.flatMap(p => p.tags)]));
+    let active = 'All';
+
+    function renderFilters() {
+      filterEl.innerHTML = '';
+      allTags.forEach(tag => {
+        const btn = document.createElement('button');
+        btn.textContent = tag;
+        btn.className = tag === active ? 'active' : '';
+        btn.onclick = () => { active = tag; renderFilters(); renderProjects(); };
+        filterEl.appendChild(btn);
+      });
+    }
+
+    function badge(label, cls='tag') { return `<span class="${cls}">${label}</span>`; }
+    function tool(label) { return badge(label, 'tool'); }
+
+    function renderProjects() {
+      const visible = active === 'All' ? projects : projects.filter(p => p.tags.includes(active));
+      container.innerHTML = '';
+      visible.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <h3>${p.title}</h3>
+          <div class="meta">${p.org} • ${p.timeframe}</div>
+          <p>${p.blurb}</p>
+          <ul class="bullets">${p.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+          <div class="flex" style="margin-top:8px;">${p.tools.map(tool).join('')}</div>
+          <div class="flex" style="margin-top:8px;">${p.tags.map(t => badge(t)).join('')}</div>
+          <div class="flex" style="margin-top:8px;">${(p.links||[]).map(l => `<a class='cta secondary' href='${l.href}' target='_blank' rel='noreferrer'>${l.label}</a>`).join('')}</div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    renderFilters();
+    renderProjects();
+  </script>
+</body>
+</html>
